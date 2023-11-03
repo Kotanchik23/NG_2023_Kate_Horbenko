@@ -1,1 +1,1 @@
-print("Kate\nHorbenko")
+print ("Kate \nHorbenko")

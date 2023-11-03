@@ -11,7 +11,7 @@ def div(x, y):
 def square_root(x):
     if x < 0:
         return "You can't take the root of a negative number"
-    return x ** (1/y)
+    return x ** (1 / y)
 def power(x, y):
     return x ** y
 
