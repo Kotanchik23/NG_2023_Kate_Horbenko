@@ -1,0 +1,14 @@
+symbol = {'letters':0 , 'number':0 , 'Special characters':0}
+your_file = input("Enter a file name:")
+
+with open(your_file, "r") as file:
+    text = file.read()
+    for i in text:
+        if i.isalpha():
+            symbol['letters'] += 1
+        elif i.isdigit():
+            symbol['number'] += 1
+        else:
+            symbol['Special characters'] += 1
+
+print(f"The text contains: {symbol}")
