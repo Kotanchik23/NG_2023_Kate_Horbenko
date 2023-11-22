@@ -1,7 +1,7 @@
 listik = []
-n = int(input("How many items do you want to enter?"))
+items = int(input("How many items do you want to enter?"))
 
-for i in range(n):
+for i in range(items):
     element = input(f"Enter element {i + 1}: ")
     listik.append(element)
 

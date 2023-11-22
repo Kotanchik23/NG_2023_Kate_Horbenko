@@ -1,9 +1,9 @@
 word = input("Enter a word: ")
 list = []
-letters = ("a","е","є","и","і","ї","о","у","я","ю")
+letters = ("а","е","є","и","і","ї","о","у","я","ю")
 
-for i in word:
-    if i in letters:
-        list.append(i)
+for letter in word:
+    if letter in letters:
+        list.append(letter)
 
 print(list)

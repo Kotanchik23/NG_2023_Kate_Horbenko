@@ -25,13 +25,8 @@ def quadratic_equation(a, b, c):
         return root1, root2
     elif dis == 0:
         root = -b / (2*a)
-        return root,
-    else:
-        real_part = -b / (2*a)
-        imaginary_part = math.sqrt(abs(dis)) / (2*a)
-        root1 = complex(real_part, imaginary_part)
-        root2 = complex(real_part, -imaginary_part)
-        return root1, root2
+        return root
+
         
 
 a = float(input("enter coefficient a: "))

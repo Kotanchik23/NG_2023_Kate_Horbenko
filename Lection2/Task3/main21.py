@@ -5,9 +5,9 @@ def Dividers_num(num):
             dividers.append(i)
     return dividers
 
-def prime_numbers_up_to_n(n):
+def prime_numbers_up_to_n(natural_num):
     prime = []
-    for num in range(1, n + 1):
+    for num in range(1, natural_num + 1):
         dividers = Dividers_num(num)
         print(f"{num}: {dividers}")
         if len(dividers) == 2:
@@ -15,7 +15,7 @@ def prime_numbers_up_to_n(n):
 
     return prime
 
-n = int(input("Enter a natural number n: "))
-print("Table of numbers from 1 to", n, "with their divisors:")
-prime_numbers = prime_numbers_up_to_n(n)
-print("\nПростые числа от 1 до", n, ":", prime_numbers)
+natural_num = int(input("Enter a natural number n: "))
+print("Table of numbers from 1 to", natural_num, "with their divisors:")
+prime_numbers = prime_numbers_up_to_n(natural_num)
+print("\nПростые числа от 1 до", natural_num, ":", prime_numbers)
