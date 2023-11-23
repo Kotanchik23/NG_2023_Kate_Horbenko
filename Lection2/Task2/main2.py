@@ -9,6 +9,6 @@ for element in numb:
         pass
 
 if list:
-    print("The following elements are numbers:", list)
+    print("The following elements are numbers:",list, "\nThe number of elements:", len(list))
 else:
     print("There are no numbers in your set. ")
