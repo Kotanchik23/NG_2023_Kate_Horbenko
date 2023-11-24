@@ -8,11 +8,11 @@ choice_translation = input("Select an action: ")
 
 match choice_translation:
     case "1":
-        cel = float(input())
+        cel = float(input("Enter celsius: "))
         fahr = celsius (cel)
         print ("Fahrenheit:", fahr)
     case "2":
-        fahr = float(input())
+        fahr = float(input("Enter fahrenheit: "))
         cel = fahrenheit (fahr)
         print ("Celsius:", cel)
         
