@@ -39,6 +39,6 @@ match ope:
         print(f"Result: Root of the power {x} of {y} = {result}")
     case "6":
         result = power(x, y)
-        print(f"Result: {x} in degree {y} = {result}")
+        print(f"Result: {x} in degree {y} = {result}") 
 
-        
+      

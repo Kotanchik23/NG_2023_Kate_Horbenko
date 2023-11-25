@@ -27,16 +27,18 @@ json_data = '''
     }
 }
 '''
+data = json.loads(json_data)
 
-def get_value_by_key(json_data, key):
-    data = json.loads(json_data)
-    
+def get_value_by_key(data, key):
+    print(data, key, '\n\n')
     if key in data:
         return data[key]
-    else:
-        return "Key not found"
-
-desired_key = input("Enter the key: ")
-
-result = get_value_by_key(json_data, desired_key)
-print(f"Value by key '{desired_key}': {result}")
+    for keys, value in data.items():
+        if isinstance(value, dict):
+            found = get_value_by_key(value, key)
+            if found is not None:
+                return found
+            
+key = input("Enter the name of the key: ")
+result = get_value_by_key(data, key)
+print(f"Key data '{key}': {result}")
