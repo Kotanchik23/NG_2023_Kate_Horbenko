@@ -18,4 +18,4 @@ def prime_numbers_up_to_n(natural_num):
 natural_num = int(input("Enter a natural number n: "))
 print("Table of numbers from 1 to", natural_num, "with their divisors:")
 prime_numbers = prime_numbers_up_to_n(natural_num)
-print("\nПростые числа от 1 до", natural_num, ":", prime_numbers)
+print("\nSimple numbers from 1 to", natural_num, ":", prime_numbers)
